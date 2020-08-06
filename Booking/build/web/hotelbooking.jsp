@@ -19,6 +19,7 @@
         <jsp:setProperty name="hotelbook" property="guestno" value='<%=request.getParameter("guestno")%>' />
         <jsp:setProperty name="hotelbook" property="checkin" value='<%=request.getParameter("checkin")%>' />
         <jsp:setProperty name="hotelbook" property="checkout" value='<%=request.getParameter("checkout")%>' />
+        <jsp:setProperty name="hotelbook" property="offer" value='<%=request.getParameter("offer")%>' />
         
         
        <h2> <jsp:getProperty name="hotelbook" property="name" /></h2>
@@ -26,6 +27,7 @@
        <h2> <jsp:getProperty name="hotelbook" property="guestno" /></h2>
        <h2> <jsp:getProperty name="hotelbook" property="checkin" /></h2>
        <h2> <jsp:getProperty name="hotelbook" property="checkout" /></h2>
+       <h2> <jsp:getProperty name="hotelbook" property="offer" /></h2>
      </body>
     
 </html>

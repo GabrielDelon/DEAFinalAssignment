@@ -79,12 +79,26 @@ public class Hotel {
     public void setCheckout(String checkout) {
         this.checkout = checkout;
     }
+    
+    /**
+     * @return the offer
+     */
+    public String getOffer() {
+        return offer;
+    }
+
+    /**
+     * @param offer the offer to set
+     */
+    public void setOffer(String offer) {
+        this.offer = offer;
+    }
     private String name;
     private String contactno;
     private String guestno;
     private String checkin;
     private String checkout;
-    
+    private String offer;
     
 }
 
