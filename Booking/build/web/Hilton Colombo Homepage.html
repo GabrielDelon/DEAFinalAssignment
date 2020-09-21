@@ -15,10 +15,10 @@ body {font-family: "Lato", sans-serif}
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
 	  
-    <a href="Western.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small" >Home</a>
-    <a href="" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Us</a>
-	<a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Special Offers</a>
-	<a href="" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Feedback</a>
+    <a href="Hilton Colombo Homepage.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small" >Home</a>
+    <a href="Aboutus.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About Us</a>
+	<a href="#special" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Special Offers</a>
+	<a href="login.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Feedback</a>
     
     
   </div>
@@ -50,20 +50,31 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
 
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+  <!-- information -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="info">
     <h2 class="w3-wide">Hilton Colombo</h2>
 	  <br><img src="HiltonLogo.jpg" style="width:100;height:100">
     <p class="w3-opacity"><i>The luxury of calm among the city chaos. We look forward to welcoming you</i></p>
-    <p class="w3-justify">As the most recognized name in the industry, travelers all over the world have been saying “Take me to the Hilton” for almost a century. And because of our innovative approach to products, amenities and service, Hilton continues to be synonymous with hotel across the globe. Hilton Hotels & Resorts remains the stylish, forward thinking global leader of hospitality – and we help make traveling easier with our smart design, innovative restaurant concepts, authentic hospitality and commitment to the global community. </p>
-	  <p>Savour your penchant for finer comforts. Partner with sheer luxury at Hilton Colombo, as you attend a business event in the capital city. Let the opulence of our meeting rooms and conference halls seep into flourishing work partnerships. Raise a toast to all the success at our plush restaurants and taste jubilance like never before. When you’ve enjoyed every bit of your grand accomplishments , retire to your room, and relish the exquisite comforts that Colombo’s most lavish business hotel has to offer.</p>
-	  
-	  <p><a href="" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="background-color:black; color:white">Our Facilities</a></p>
+    <h5 class="w3-justify">As the most recognized name in the industry, travelers all over the world have been saying “Take me to the Hilton” 
+        for almost a century. And because of our innovative approach to products, amenities and service, Hilton continues to be synonymous with hotel across the globe. Hilton Hotels & Resorts remains the stylish, forward thinking 
+        global leader of hospitality – and we help make traveling easier with our smart design, innovative restaurant concepts, authentic hospitality and commitment to the global community. </h5>
+    
+	  <h5>Savour your penchant for finer comforts. Partner with sheer luxury at Hilton Colombo, as you attend a business event in the capital city.
+              Let the opulence of our meeting rooms and conference halls seep into flourishing work partnerships. 
+              Raise a toast to all the success at our plush restaurants and taste jubilance like never before.
+              When you’ve enjoyed every bit of your grand accomplishments , retire to your room, and relish the exquisite comforts that Colombo’s most lavish business hotel has to offer.</h5>
+	  <img src="qq.png" style="width:75;height:75">
+    <center><h3>"Wonderful stay - Had a great time at Hilton during our Sri lankan
+tour. Staff was very cheerful and Helpful and they took care of our every
+need. Special thanks to staff who work in Main Restaurant for take caring of my
+Baby's food.I was touched, Thank
+you"</h3><h3>Hilton Colombo-Serena Willis</h3> </center>
+	  <p><a href="Hoteldetails.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small" style="background-color:black; color:white">Our Offers</a></p>
     
   </div>
 
-  <!-- The Tour Section -->
-  <div class="w3-black" id="tour">
+  <!-- Special Offers -->
+  <div class="w3-black" id="special">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
       <h2 class="w3-wide w3-center">Special Offers</h2>
       <p class="w3-opacity w3-center"><i>When it’s time for a getaway, Hilton offers unique travel packages and hotel discounts.</i></p><br>
@@ -123,17 +134,17 @@ body {font-family: "Lato", sans-serif}
 		  
 		  
 		   <p><label><i class="fa fa-user"></i> Check-in Date</label></p>
-        <input class="w3-input w3-border" type="date" name="checkin" placeholder="Check-in">
+        <input class="w3-input w3-border" type="text" name="checkin" placeholder="Check-in">
 		  
 		  <p><label><i class="fa fa-user"></i>Check-out Date</label></p>
-		   <input class="w3-input w3-border" type="date" name="checkout" placeholder="Check-out">
+		   <input class="w3-input w3-border" type="text" name="checkout" placeholder="Check-out">
                    
                    <p><label><i class="fa fa-shopping-cart"></i>Offer</label></p>
         <input class="w3-input w3-border" type="text" name="offer" value="Special Offer 1" readonly>
                    
         <input  class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" type="submit" value="Book" >
 			  
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('specialoffer1').style.display='none'">Close <i class="fa fa-remove"></i></button>
+       
         <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
 		  </form>
       </div>
@@ -160,17 +171,17 @@ body {font-family: "Lato", sans-serif}
 		  
 		  
 		   <p><label><i class="fa fa-user"></i> Check-in Date</label></p>
-        <input class="w3-input w3-border" type="date" name="checkin" placeholder="Check-in">
+        <input class="w3-input w3-border" type="text" name="checkin" placeholder="Check-in">
 		  
 		  <p><label><i class="fa fa-user"></i>Check-out Date</label></p>
-		   <input class="w3-input w3-border" type="date" name="checkout" placeholder="Check-out">
+		   <input class="w3-input w3-border" type="text" name="checkout" placeholder="Check-out">
                    
                    <p><label><i class="fa fa-shopping-cart"></i>Offer</label></p>
         <input class="w3-input w3-border" type="text" name="offer" value="Special Offer 2" readonly>
                    
         <input  class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" type="submit" value="Book" >
 			  
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('specialoffer2').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        
         <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
 		  </form>
       </div>
@@ -185,7 +196,7 @@ body {font-family: "Lato", sans-serif}
         <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right" ></i>Book Now</h2>
       </header>
       <div class="w3-container">
-		  <form action="http://localhost:8080/Booking/Specialoffer2.jsp" method="post">
+		  <form action="http://localhost:8080/Booking/Specialoffer1.jsp" method="post">
         <p><label><i class="fa fa-user"></i>Name</label></p>
         <input class="w3-input w3-border" type="text" name="name" placeholder="Enter Booking Name">
        
@@ -197,17 +208,17 @@ body {font-family: "Lato", sans-serif}
 		  
 		  
 		   <p><label><i class="fa fa-user"></i> Check-in Date</label></p>
-        <input class="w3-input w3-border" type="date" name="checkin" placeholder="Check-in">
+        <input class="w3-input w3-border" type="text" name="checkin" placeholder="Check-in">
 		  
 		  <p><label><i class="fa fa-user"></i>Check-out Date</label></p>
-		   <input class="w3-input w3-border" type="date" name="checkout" placeholder="Check-out">
+		   <input class="w3-input w3-border" type="text" name="checkout" placeholder="Check-out">
                    
                    <p><label><i class="fa fa-shopping-cart"></i>Offer</label></p>
         <input class="w3-input w3-border" type="text" name="offer" value="Special Offer 3" readonly>
                    
         <input  class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" type="submit" value="Book" >
 			  
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('specialoffer3').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        
         <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
 		  </form>
       </div>

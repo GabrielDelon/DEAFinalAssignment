@@ -5,6 +5,14 @@
  */
 package Hotelbeanpackage;
 
+import java.beans.Statement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Imalka.Wijesinghe
@@ -87,5 +95,35 @@ public class Beanspecialoffer2 {
     private String checkin;
     private String checkout;
   
+    Statement st;
     
+    void addLogin(String name, String contactno, String guestno,String checkin,String checkout) throws SQLException {
+        
+        connectToDB();
+        
+        String query = "INSERT INTO login(name,contact,guestno,checkin,checkout),"
+                + "VALUES('"+name+"','"+contactno+"','"+guestno+"','"+checkin+"','"+checkout+"')";
+        
+        st.executeUpdate(query);
+
+    
+    
+}
+    
+    private void connectToDB() throws SQLException {
+        
+        try {
+            String driver = "com.mysql.jdbc.Driver";
+            String url = "jdbc:mysql://localhost:3306/";
+            
+            Class.forName(driver);
+            Connection con = DriverManager.getConnection(url,"root","");
+            
+            st = (Statement) con.createStatement();
+                    
+                    } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Map.Entry.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
 }
